@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1485692527799759341}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1874875, y: 0.009716868, z: 0.02120788}
+  m_LocalPosition: {x: -0.97, y: 0.01, z: 0.02120788}
   m_LocalScale: {x: 0.39330018, y: 0.40573722, z: 0.39856133}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -158,7 +158,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.14716971, g: 0.14716971, b: 0.14716971, a: 1}
+  m_Color: {r: 0.3647059, g: 0.3647059, b: 0.3647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -194,8 +194,8 @@ Transform:
   m_GameObject: {fileID: 6681106403034883307}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.584242, y: 0.009716868, z: 0.02120788}
-  m_LocalScale: {x: 1.206573, y: 0.4028346, z: 0.33532}
+  m_LocalPosition: {x: -0.476, y: 0.01, z: 0.02120788}
+  m_LocalScale: {x: 0.96, y: 0.4028346, z: 0.33532}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7842212177763505850}
@@ -388,6 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3985157900406991978}
+  curposition: {x: 0, y: 0}
 --- !u!50 &3985157900406991978
 Rigidbody2D:
   serializedVersion: 4
@@ -400,7 +401,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -447,8 +448,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5851511, y: 0.009623181}
-  m_Size: {x: 1.5964717, y: 0.40221548}
+  m_Offset: {x: -0.47643366, y: 0.009622987}
+  m_Size: {x: 1.3790443, y: 0.40221843}
   m_Direction: 1
 --- !u!233 &1035997770593639713
 HingeJoint2D:
@@ -466,7 +467,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.013645843, y: 0.009981275}
-  m_ConnectedAnchor: {x: 3.180109, y: 5.159306}
+  m_ConnectedAnchor: {x: 3.1801078, y: 5.159306}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0

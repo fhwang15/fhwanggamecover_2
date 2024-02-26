@@ -6,11 +6,13 @@ public class PlayerPlatform : MonoBehaviour
 {
 
     public Rigidbody2D rb;
+    public Vector2 curposition;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();  
+        rb = GetComponent<Rigidbody2D>();
+        curposition = transform.position;
     }
 
     // Update is called once per frame
@@ -18,9 +20,8 @@ public class PlayerPlatform : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Vector3 value = Vector3.up * 120;
-            rb.AddForceAtPosition(value, new Vector2(0.24f, 1.85f), ForceMode2D.Force);
-            Debug.Log("Work");
+            Vector3 value = Vector3.up * 100;
+            rb.AddForceAtPosition(value, curposition, ForceMode2D.Force);
         
         }
     }

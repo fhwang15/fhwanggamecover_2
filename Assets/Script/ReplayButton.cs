@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Screw : MonoBehaviour
+public class ReplayButton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,9 +14,12 @@ public class Screw : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GoalPoint.win == true)
-        {
-            Destroy(gameObject);
-        }
+
+        
+    }
+
+    public void OnPressed()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
