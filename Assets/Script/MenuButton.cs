@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneMover : MonoBehaviour
+public class MenuButton : MonoBehaviour
 {
-    int sceneIndex;
-
     // Start is called before the first frame update
     void Start()
     {
-        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        
     }
 
     // Update is called once per frame
@@ -21,12 +19,7 @@ public class SceneMover : MonoBehaviour
 
     public void OnPressed()
     {
-        SceneManager.LoadScene(sceneIndex+1);
-        if(sceneIndex == 5)
-        {
-            SceneManager.LoadScene(0);
-            sceneIndex = 0;
-        }
+        SceneManager.LoadScene(0);
+       
     }
-
 }
